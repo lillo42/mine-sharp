@@ -70,7 +70,7 @@ public class Game
             if (SystemEventReader.Poll(Duration.FromMilliseconds(10)))
             {
                 var @event = SystemEventReader.Read();
-                if (@event is Event.KeyEventEvent { Event.Kind: KeyEventKind.Release } keyEvent)
+                if (@event is Event.KeyEventEvent { Event.Kind: KeyEventKind.Press } keyEvent)
                 {
                     var code = keyEvent.Event.Code;
                     if (code == KeyCode.Up || code is KeyCode.CharKeyCode { Character: "k" })
