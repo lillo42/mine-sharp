@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>$(AppTargetFramework)</TargetFramework>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>mine-sharp</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Boto.Tutu" />
+    <PackageReference Include="CommandLineParser" />
+  </ItemGroup>
+
+</Project>
