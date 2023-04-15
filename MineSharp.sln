@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{78B10DF5-5DCF-4ACE-BC79-218D87866335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSharp", "src\MineSharp\MineSharp.csproj", "{EA2F4355-D2E7-43EB-9BA8-5A476B933DFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D1CF3FA0-9F2D-4206-BB18-62C7E4521306}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{55986411-C538-485B-A543-48A96B50DDEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55986411-C538-485B-A543-48A96B50DDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55986411-C538-485B-A543-48A96B50DDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2F4355-D2E7-43EB-9BA8-5A476B933DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2F4355-D2E7-43EB-9BA8-5A476B933DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2F4355-D2E7-43EB-9BA8-5A476B933DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2F4355-D2E7-43EB-9BA8-5A476B933DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA2F4355-D2E7-43EB-9BA8-5A476B933DFE} = {78B10DF5-5DCF-4ACE-BC79-218D87866335}
+	EndGlobalSection
+EndGlobal

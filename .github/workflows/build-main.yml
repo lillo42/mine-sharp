@@ -1,0 +1,25 @@
+name: Build Main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-ubuntu:
+    name: build & tests on Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Build & Pack 
+        run: |
+          chmod +x ./build.sh
+          ./build.sh Tests Pack
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: packages
+          path: artifacts/packages
